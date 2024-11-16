@@ -1,0 +1,60 @@
+<%- include('./partials/head') %>
+    <link rel="stylesheet" href="comments.css">
+</head>
+
+<body  style="background-color:#111">
+    <%- include('./partials/navbar') %>
+        <!--comment section start -->
+        <section class="comment-form" id="comment-form">
+            <div class="max-width">
+                <div class="column right">
+                    <h2 class="title">Comment</h2>
+                    <form action="/all-comment" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="Name" name="Name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" id="Mail" name="Mail" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="TheComment" name="TheComment" cols="30" rows="10" placeholder="Comment..."
+                                required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <div class="max-width">
+                <div class="comment">
+                    <% arrArticle.forEach(item=> { %>
+                        <div class="blog_post">
+                            <div class="img_pod">
+                                <img src="images/user_no_photo.png"
+                                    alt="random image">
+                            </div>
+                            <div class="container_copy">
+                                <h1>
+                                    <%= item.Name %>
+                                </h1>
+                                <p>
+                                    <%= item.TheComment %>
+                                </p>
+                            </div>
+                        </div>
+                        <% }); %>
+                </div>
+            </div>
+        </section>
+        <!-- footer section start -->
+        <%- include('./partials/footer') %>
+
+            <script src="script.js"></script>
+</body>
+
+</html>

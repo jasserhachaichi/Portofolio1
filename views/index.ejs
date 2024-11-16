@@ -1,0 +1,374 @@
+<%- include('./partials/head') %>
+    <link rel="stylesheet" href="counterup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    </head>
+
+
+    <%- include('./partials/navbar') %>
+
+
+        <!-- home section start -->
+        <section id="A1">
+            <div class="slide-section">
+                <img src="images/banner5.jpg">
+                <img id="my-img" src="images/banner6.jpg">
+                <input type="range" min="0" max="100" value="50" id="slider-btn" oninput="slide()">
+
+            </div>
+
+        </section>
+        <!-- about section start -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About Me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/profile-aboutme.jpg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Hello, my name is <span>Jasser Hachaichi</span> And I'm a <span class="typing"></span>.</div>
+                        <p>I'm passionate and dedicated to my work.
+                            I have acquired the skills and knowledge
+                            necessary to make your project a success.</p>
+                        <a href="images/version6.jpg" target="_blank" >Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services section start -->
+        <section class="services" id="services">
+            <div class="max-width">
+                <h2 class="title">My Services</h2>
+                <div class="serv-content">
+                    <div class="card" data-aos="fade-left" data-aos-duration="700">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-paint-brush"></i></div>
+                            <div class="textright">
+                                <div class="text">Web Design</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-paint-brush"></i></div>
+                            <div class="textright">
+                                <div class="text">App Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-camera-retro"></i></div>
+                            <div class="textright">
+                                <div class="text">Photography</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-desktop"></i></div>
+                            <div class="textright">
+                                <div class="text">Web Dev</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="800">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="textright">
+                                <div class="text">App Dev</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="1000">
+                        <div class="box">
+                            <div class="ileft"><i class="fas fa-trophy"></i></div>
+                            <div class="textright">
+                                <div class="text">Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My Skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text" data-aos="fade-left" data-aos-duration="700">My creative skills.</div>
+                        <p data-aos="fade-left" data-aos-duration="700" data-aos-delay="200"><span>✓</span> Using design
+                            software such as Photoshop, Adobe xd and Cinema 4D programs to produce
+                            excellent designs that meet user requirements.</p>
+                        <p data-aos="fade-left" data-aos-duration="700" data-aos-delay="200"><span>✓</span> Having the
+                            ability to “think outside the box” and come up with novel ideas, concepts or
+                            designs.</p>
+                        <p data-aos="fade-left" data-aos-duration="700" data-aos-delay="200"><span>✓</span> Being able
+                            to identify
+                            and specify a measurement, lines and borders with precision and working with it
+                            accordingly.</p>
+                        <a id="btnread" data-aos="fade-left" data-aos-duration="700" data-aos-delay="300">Read more</a>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info" data-aos="fade-left" data-aos-duration="700" data-aos-delay="50">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                            <div class="info">
+                                <span>CSS (SASS - Bootstrap)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars" data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars" data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
+                            <div class="info">
+                                <span>Node Js (Express Js)</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="line node"></div>
+                        </div>
+                        <div class="bars" data-aos="fade-left" data-aos-duration="700" data-aos-delay="800">
+                            <div class="info">
+                                <span>Python</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="line python"></div>
+                        </div>
+                        <div class="bars" data-aos="fade-left" data-aos-duration="700" data-aos-delay="1000">
+                            <div class="info">
+                                <span>MySQL - SQLite - MongoDB</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="line mysql"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-languages">
+                    <div class="text">Languages.</div>
+                    <div class="Slanguages">
+                        <div class="Slanguage" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                            <span class="fortitre">Arabic</span>
+                            <div class="progress-circle over50 p95">
+                                <span>95%</span>
+                                <div class="left-half-clipper">
+                                    <div class="first50-bar"></div>
+                                    <div class="value-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Slanguage" data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                            <span class="fortitre">Frensh</span>
+                            <div class="progress-circle over50 p60">
+                                <span>60%</span>
+                                <div class="left-half-clipper">
+                                    <div class="first50-bar"></div>
+                                    <div class="value-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Slanguage" data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
+                            <span class="fortitre">English</span>
+                            <div class="progress-circle over50 p70">
+                                <span>70%</span>
+                                <div class="left-half-clipper">
+                                    <div class="first50-bar"></div>
+                                    <div class="value-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Slanguage" data-aos="fade-left" data-aos-duration="700" data-aos-delay="800">
+                            <span class="fortitre">German</span>
+                            <div class="progress-circle over50 p70">
+                                <span>70%</span>
+                                <div class="left-half-clipper">
+                                    <div class="first50-bar"></div>
+                                    <div class="value-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects statistics start -->
+        <section id="My-Projects" class="counterup">
+            <div class="max-width">
+                <h2 class="title">My Projects</h2>
+                <div class="serv-content">
+                    <div class="project-counter-wrp">
+                        <ul>
+                            <li data-aos="fade-left" data-aos-duration="700">
+                                <i class="fas fa-check-circle"></i>
+                                <p id="number1" class="number">10</p>
+                                <span></span>
+                                <p>Projects Done</p>
+                            </li>
+                            <li data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                                <i class="fas fa-smile"></i>
+                                <p id="number2" class="number">10</p>
+                                <span></span>
+                                <p>Happy Clients</p>
+                            </li>
+                            <li data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                                <i class="fa fa-coffee"></i>
+                                <p id="number3" class="number">559</p>
+                                <span></span>
+                                <p>Cups of Coffee</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- contact section start -->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text" data-aos="fade-left" data-aos-duration="700">Get in Touch</div>
+                        <p data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">If you have any questions,
+                            please feel free to drop me a line. If you don't get an answer
+                            immediately, I might just be travelling through
+                            the middle of nowhere. I'll get back to you as soon as I can. That's a promise!</p>
+                        <div class="icons">
+                            <div class="row" data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Jasser Hachaichi</div>
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Gabes,Tunisia</div>
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-left" data-aos-duration="700" data-aos-delay="800">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">jassour7777@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text" data-aos="fade-left" data-aos-duration="700" data-aos-delay="50">Message me
+                        </div>
+                        <form action="/all-articles" method="POST">
+                            <div class="fields" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="field name">
+                                    <input type="text" id="author" name="author" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" id="mail" name="mail" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field" data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
+                                <input type="text" id="summary" name="summary" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea" data-aos="fade-left" data-aos-duration="700"
+                                data-aos-delay="500">
+                                <textarea id="body" name="body" cols="30" rows="10" placeholder="Message..."
+                                    required></textarea>
+                            </div>
+                            <div class="button-area" data-aos="fade-left" data-aos-duration="700" data-aos-delay="250">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="yt-warning">
+            <div class="readmoreyt">
+
+                <div class="read-yt">
+                    <button type="button" class="btn-close-yt">
+                        <span id="btnread-yt-cancel" class="icon-cross"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <h1>Youtube channel coming soon stay tuned &#128293;</h1>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="readmore">
+            <div class="readmoreee">
+
+                <div class="readmoree">
+                    <button type="button" class="btn-close">
+                        <span id="btnreadcancel" class="icon-cross"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <h1>My Creative Skills</h1>
+
+                    <div>
+                        <p><span>✓</span> Being able to identify and specify a measurement, lines and borders with
+                            precision and working with it accordingly.</p>
+                        <p><span>✓</span> Using design software such as Photoshop, Adobe xd and Cinema 4D programs to
+                            produce excellent designs that meet user requirements.</p>
+                        <p><span>✓</span> Having the ability to “think outside the box” and come up with novel ideas,
+                            concepts or designs.</p>
+                        <p><span>✓</span> Devising and managing marketing campaigns.</p>
+                        <p><span>✓</span> Excellent interpersonal skills, demonstrated by daily communication with
+                            clients, colleagues and non-technical professionals.</p>
+                        <p><span>✓</span> Expert knowledge of various programming languages, including Python,
+                            JavaScript and SQL.</p>
+                        <p><span>✓</span> Able to work individually without direct supervision and as a dedicated
+                            technical team member whenever required.</p>
+                        <p><span>✓</span> Outstanding software testing and troubleshooting skills.</p>
+                        <p><span>✓</span> Knowledgeable of Design and development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section start -->
+        <%- include('./partials/footer') %>
+
+
+            <script src="script.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+                function slide() {
+                    let slideValue = document.getElementById("slider-btn").value;
+
+                    document.getElementById("my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+
+                    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+                }
+            </script>
+
+            </body>
+
+            </html>

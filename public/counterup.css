@@ -1,0 +1,77 @@
+
+
+/**************/
+.counterup {
+    color: var(--white-color);
+    background: var(--Black-color);
+}
+
+.counterup .title::before {
+    background: var(--white-color);
+}
+
+.counterup .title::after {
+    background: var(--Black-color);
+    content: "statistics";
+}
+
+.project-counter-wrp {
+    width: 100%;
+    height:auto;
+}
+
+.project-counter-wrp ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-counter-wrp li {
+    width: 330px;
+    text-align: center;
+    border-radius: 6px;
+    margin:5px 5px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #222;
+}
+
+.project-counter-wrp li:hover {
+    background: var(--blue-color);
+
+}
+
+.project-counter-wrp li p.number {
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.project-counter-wrp li p {
+    color: var(--white-color);
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+.project-counter-wrp li span {
+    width: 60px;
+    background: var(--blue-color);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+}
+.project-counter-wrp li:hover span{
+    background: var(--white-color);
+}
+
+.project-counter-wrp li i {
+    vertical-align: middle;
+    font-size: 50px;
+    color: var(--blue-color);
+}
+.project-counter-wrp li:hover i {
+    color: var(--white-color);
+}
